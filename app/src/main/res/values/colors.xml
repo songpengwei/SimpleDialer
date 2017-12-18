@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0097a7</color>
+    <color name="colorPrimaryDark">#00838f</color>
+    <color name="colorAccent">#03a9f4</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="background_dialpad">#fcfcfc</color>
+    <color name="background_dialpad_pressed">#ececec</color>
+    <color name="dialpad_secondary_text_color">#737373</color>
+    <color name="dialpad_digits_text_color">#00838f</color>
+    <color name="dialpad_separator_line_color">#bbb</color>
+    <color name="dialpad_background">#dadada</color>
+    <color name="dialpad_icon_tint">#89000000</color>
+    <color name="dialpad_voicemail_tint">#919191</color>
+    <color name="dialpad_ripple_color">#10000000</color>
+</resources>

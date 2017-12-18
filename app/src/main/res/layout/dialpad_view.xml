@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialpad_view"
+    class="com.qtmuniao.simpledialer.dialer.DialpadView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:clickable="true"
+    android:elevation="0dp"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+  <!-- Text field and possibly soft menu button above the keypad where
+   the digits are displayed. -->
+  <LinearLayout
+    android:id="@+id/digits_container"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+
+    <com.qtmuniao.simpledialer.dialer.DigitsEditText
+      android:id="@+id/digits"
+      android:textStyle="normal"
+      android:layout_width="0dp"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:background="@android:color/transparent"
+      android:cursorVisible="false"
+      android:focusableInTouchMode="true"
+      android:fontFamily="sans-serif"
+      android:freezesText="true"
+      android:gravity="center"
+      android:maxLines="1"
+      android:scrollHorizontally="true"
+      android:singleLine="true"
+      android:textColor="#000"
+      android:textCursorDrawable="@null"
+      android:textSize="34sp"/>
+
+    <ImageButton
+      android:id="@+id/deleteButton"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:background="@drawable/btn_dialpad_key"
+      android:contentDescription="@string/description_delete_button"
+      android:src="@drawable/quantum_ic_backspace_white_24"
+      android:state_enabled="false"
+      android:tint="@color/dialpad_icon_tint"
+      android:tintMode="src_in"/>
+  </LinearLayout>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/dialpad_background"/>
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="14dp"/>
+
+  <include layout="@layout/dialpad"/>
+
+  <Space
+    android:layout_width="match_parent"
+    android:layout_height="8dp"/>
+
+</view>

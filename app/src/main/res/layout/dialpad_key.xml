@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="13"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/btn_dialpad_key"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+        <TextView android:id="@+id/dialpad_key_number"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textSize="36sp"
+            android:textColor="@color/dialpad_digits_text_color"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/dialpad_key_letters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/dialpad_secondary_text_color"
+            android:fontFamily="sans-serif-regular"
+            android:gravity="center_horizontal"/>
+    </LinearLayout>
+
+</FrameLayout>
